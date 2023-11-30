@@ -36,3 +36,106 @@
     transform: rotate(360deg);
   }
 }
+
+/* 計算機画面大枠 */
+.calculator {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 数字ボタン部分調整 */
+.calculator-buttons {
+  margin-top: 10px;
+  height: 200;
+  width: 220px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+/* 数字入力ボタンのサイズ調整 */
+.calculator-buttons button {
+  width: 70px;
+  height: 25px;
+  font-size: 10px;
+}
+
+/* 履歴登録チェックボックス部分 */
+.check-box {
+  width: 100px;
+  height: 20px;
+  margin-top: 90px;
+}
+
+.computation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 式部分の大枠 */
+.flex_computation-item {
+  width: 400px;
+  height: 30px;
+  margin-top: 10px;
+}
+/* 答え欄 */
+.flex_computation-answer {
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* 左辺の値入力欄 */
+.left-text {
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 10px
+}
+/* 右辺の値入力欄 */
+.right-text {
+  width: 80px;
+  margin-left: 10px;
+}
+
+/* 式クリアボタン */
+.clear-button {
+  margin-top: 10px;
+  margin-right: 250px;
+}
+
+/* 計算履歴部分大枠 */
+.history {
+  width: 550px;
+  margin: auto;
+}
+
+/* 計算履歴テーブル */
+.history .history-table {
+  margin: auto;
+  width: 70%;
+  text-align: left;
+  border-collapse: collapse;
+}
+/* 計算履歴テーブル・グリッド */
+.history .history-table th, .history .history-table td {
+  border: 1px solid black;
+  padding: 15px;
+}
+/* 計算履歴テーブル見出しカラー・ボーダーカラー */
+.history .history-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: chocolate;
+  color: black;
+}
+
+/* 履歴削除ボタン */
+.history-delete {
+  text-align: right;
+}
